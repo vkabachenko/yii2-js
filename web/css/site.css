@@ -1,6 +1,7 @@
 html,
 body {
     height: 100%;
+    font-size: 110%;
 }
 
 .wrap {
@@ -25,4 +26,8 @@ h1 {
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
+}
+
+ul {
+    padding:0;
 }
