@@ -2,7 +2,6 @@
 use yii\helpers\Html;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
-use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
 
 /* @var $this \yii\web\View */
@@ -36,7 +35,11 @@ AppAsset::register($this);
             echo Nav::widget([
                 'options' => ['class' => 'navbar-nav navbar-right'],
                 'items' => [
-                    ['label' => 'Home', 'url' => ['/site/index']],
+                    ['label' => 'Home', 'url' => ['site/index']],
+                    ['label' => 'Pure JS', 'items' => [
+                        ['label' => 'Outer script file in view', 'url' =>  ['site/outer'],],
+                        ],
+                  ],
                 ],
             ]);
             NavBar::end();

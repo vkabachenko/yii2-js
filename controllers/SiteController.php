@@ -14,5 +14,11 @@ class SiteController extends Controller
         return $this->render('index');
     }
 
+    // renders view with js in outer file
+    public function actionOuter()
+    {
+        return $this->render('outer');
+    }
+
 
 }
