@@ -8,6 +8,8 @@ Contents
 
 [Script file in view](docs/outer.md)
 
+[Inner script in view](docs/inner.md)
+
 
 
 

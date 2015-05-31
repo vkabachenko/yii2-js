@@ -38,7 +38,8 @@ AppAsset::register($this);
                     ['label' => 'Home', 'url' => ['site/index']],
                     ['label' => 'Pure JS', 'items' => [
                         ['label' => 'Outer script file in view', 'url' =>  ['site/outer'],],
-                        ],
+                        ['label' => 'Inner script in view', 'url' =>  ['site/inner'],],
+                    ],
                   ],
                 ],
             ]);

@@ -20,5 +20,11 @@ class SiteController extends Controller
         return $this->render('outer');
     }
 
+    // renders view with js inner scripts
+    public function actionInner()
+    {
+        $interval = 1000; // php variable to pass into js script
+        return $this->render('inner',['interval' => $interval]);
+    }
 
 }
