@@ -1,4 +1,4 @@
-var div = $('.site-outer');
+var div = $('#content');
 
     div.hide();
 
