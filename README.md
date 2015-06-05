@@ -10,6 +10,6 @@ Contents
 
 [Inner script in view](docs/inner.md)
 
-
+[Third party js widget in view](docs/widget.md)
 
 

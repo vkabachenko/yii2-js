@@ -1,0 +1,14 @@
+#imgDescr {
+    margin:5px 0;
+    text-align: center;
+}
+
+#sliderTest {
+    width:425px;
+    margin:0 auto;
+}
+
+button.slick-prev,button.slick-next,
+button.slick-prev:hover,button.slick-next:hover {
+    background-color: #BED7EB;
+}

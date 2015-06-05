@@ -39,6 +39,7 @@ AppAsset::register($this);
                     ['label' => 'Pure JS', 'items' => [
                         ['label' => 'Outer script file in view', 'url' =>  ['site/outer'],],
                         ['label' => 'Inner script in view', 'url' =>  ['site/inner'],],
+                        ['label' => 'Third party widget', 'url' =>  ['site/widget'],],
                     ],
                   ],
                 ],

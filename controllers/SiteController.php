@@ -27,4 +27,9 @@ class SiteController extends Controller
         return $this->render('inner',['interval' => $interval]);
     }
 
+    // runs a widget
+    public function actionWidget()
+    {
+        return $this->render('widget');
+    }
 }
