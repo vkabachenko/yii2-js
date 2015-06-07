@@ -42,6 +42,10 @@ AppAsset::register($this);
                         ['label' => 'Third party widget', 'url' =>  ['site/widget'],],
                     ],
                   ],
+                    ['label' => 'Ajax', 'items' => [
+                        ['label' => 'Simple html loading', 'url' => ['ajax/load'],],
+                    ]
+                  ],
                 ],
             ]);
             NavBar::end();

@@ -12,4 +12,5 @@ Contents
 
 [Third party js widget in view](docs/widget.md)
 
+[Simple loading html content using ajax](docs/load.md)
 
