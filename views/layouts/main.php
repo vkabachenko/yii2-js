@@ -44,6 +44,8 @@ AppAsset::register($this);
                   ],
                     ['label' => 'Ajax', 'items' => [
                         ['label' => 'Simple html loading', 'url' => ['ajax/load'],],
+                        ['label' => 'Passing data in json format', 'url' => ['ajax/json'],],
+
                     ]
                   ],
                 ],

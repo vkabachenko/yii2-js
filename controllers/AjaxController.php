@@ -2,10 +2,14 @@
 
 namespace app\controllers;
 
+use app\models\Countries;
+use app\models\States;
 use Yii;
+use yii\helpers\ArrayHelper;
 use yii\web\Controller;
 use app\models\Article;
 use yii\web\NotFoundHttpException;
+use yii\web\Response;
 
 
 class AjaxController extends Controller {
@@ -32,6 +36,34 @@ class AjaxController extends Controller {
         }
     }
 
+    public function actionJson()
+    {
+
+        $countries = Countries::find()->orderBy('name')->asArray()->all();
+        $countries = ArrayHelper::map($countries,'id','name');
+
+        return $this->render('json',['countries' => $countries]);
+
+    }
+
+    // for ajax call from the view 'json'
+    public function actionStates($id_country)
+    {
+
+        if (Yii::$app->request->isAjax) {
+
+            Yii::$app->response->format = Response::FORMAT_JSON;
+
+            return States::find()->select(['id','name'])
+                ->where(['id_country' => $id_country])
+                ->orderBy('name')->all();
+
+        }
+        else {
+            throw new NotFoundHttpException('The requested page does not exist.');
+        }
+
+    }
 
 
 } 
