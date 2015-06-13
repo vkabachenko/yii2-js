@@ -10,6 +10,7 @@ use yii\web\Controller;
 use app\models\Article;
 use yii\web\NotFoundHttpException;
 use yii\web\Response;
+use yii\helpers\Url;
 
 
 class AjaxController extends Controller {
@@ -64,6 +65,42 @@ class AjaxController extends Controller {
         }
 
     }
+
+    public function actionModal()
+    {
+        $countries = Countries::find()->orderBy('name')->all();
+        $countriesList = [];
+
+        /* @var $country Countries */
+        // for select options in view: url as value, name of country as text
+        foreach ($countries as $country) {
+            $url = Url::to(['ajax/first-state','id_country' => $country->id]);
+            $countriesList[$url] = $country->name;
+        }
+
+        return $this->render('modal',['countries' => $countriesList]);
+
+    }
+
+    // for ajax call from the view 'modal'
+    public function actionFirstState($id_country)
+    {
+       if (Yii::$app->request->isAjax) {
+
+            $model = States::find()
+            ->where(['id_country' => $id_country])
+            ->orderBy('name')->one();
+
+               return $this->renderAjax('editState',['model' => $model,]);
+            }
+                  else {
+                       throw new NotFoundHttpException('The requested page does not exist.');
+                   }
+
+    }
+
+
+
 
 
 } 
