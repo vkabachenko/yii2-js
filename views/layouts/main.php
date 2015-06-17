@@ -45,7 +45,7 @@ AppAsset::register($this);
                     ['label' => 'Ajax', 'items' => [
                         ['label' => 'Simple html loading', 'url' => ['ajax/load'],],
                         ['label' => 'Passing data in json format', 'url' => ['ajax/json'],],
-                        ['label' => 'Modal window demo', 'url' => ['ajax/modal'],],
+                        ['label' => 'Simple pjax with forms and links', 'url' => ['ajax/pjax'],],
 
                     ]
                   ],
@@ -58,8 +58,7 @@ AppAsset::register($this);
             <h1>JavaScript in Yii2 examples</h1>
             <?= $content ?>
         </div>
-    </div>
-
+</div>
     <footer class="footer">
         <div class="container">
             <p class="pull-left">&copy; <?= $this->title.' '.date('Y') ?></p>

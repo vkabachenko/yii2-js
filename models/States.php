@@ -30,6 +30,7 @@ class States extends \yii\db\ActiveRecord
     {
         return [
             [['id_country'], 'integer'],
+            [['id'], 'safe'],
             [['name'], 'string', 'max' => 255]
         ];
     }
@@ -52,4 +53,21 @@ class States extends \yii\db\ActiveRecord
     {
         return $this->hasOne(Countries::className(), ['id' => 'id_country']);
     }
+
+    /**
+     * first state of given country
+     *
+     * @param $id_country integer
+     * @return States
+     */
+
+    public static function firstRecord($id_country)
+    {
+
+        return static::find()
+            ->where(['id_country' => $id_country])
+            ->orderBy('name')->one();
+
+    }
+
 }

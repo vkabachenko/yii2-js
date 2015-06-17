@@ -15,3 +15,5 @@ Contents
 [Simple loading html content using ajax](docs/load.md)
 
 [Passing data from server in json format](docs/json.md)
+
+[Simple pjax with forms and links](docs/pjax.md)

@@ -18,7 +18,9 @@
         "yiisoft/yii2": ">=2.0.4",
         "yiisoft/yii2-bootstrap": "*",
         "yiisoft/yii2-swiftmailer": "*",
-        "bower-asset/slick-carousel": ">=1.5.0"
+        "bower-asset/slick-carousel": ">=1.5.0",
+        "kartik-v/yii2-widget-alert": "*",
+        "bupy7/yii2-ajaxfilter": "dev-master"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",

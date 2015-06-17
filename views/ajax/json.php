@@ -4,8 +4,8 @@ use yii\helpers\Html;
 use yii\helpers\Url;
 use app\assets\JsonAsset;
 use yii\web\View;
+use app\models\Countries;
 
-/* @var $countries Array */
 /* @var $this \yii\web\View */
 
 // declare ajax url as js variable
@@ -14,6 +14,8 @@ $this->registerJS("var urlAjax = '$urlAjax'",View::POS_HEAD);
 
 // register js file with ajax
 JsonAsset::register($this);
+
+$countries = Countries::getList();
 
 echo Html::dropDownList('country', null, $countries,
     ['prompt' => 'select country',
