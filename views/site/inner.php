@@ -1,6 +1,5 @@
 <?php
 
-use app\assets\OnceAsset;
 use yii\helpers\Html;
 
 /* @var $this yii\web\View */

@@ -46,7 +46,7 @@ AppAsset::register($this);
                         ['label' => 'Simple html loading', 'url' => ['ajax/load'],],
                         ['label' => 'Passing data in json format', 'url' => ['ajax/json'],],
                         ['label' => 'Simple pjax with forms and links', 'url' => ['ajax/pjax'],],
-
+                        ['label' => 'Ajax and modal windows in grid', 'url' => ['grid/index'],],
                     ]
                   ],
                 ],

@@ -1,4 +1,4 @@
-Yii 2 JavaScript Examples
+JavaScript in Yii2
 ============================
 
 Contents
@@ -17,3 +17,5 @@ Contents
 [Passing data from server in json format](docs/json.md)
 
 [Simple pjax with forms and links](docs/pjax.md)
+
+[CRUD grid with ajax and modal windows](docs/grid.md)
