@@ -16,6 +16,6 @@ class JsonAsset extends AssetBundle
        'js/json.js',
     ];
     public $depends = [
-        'app\assets\AppAsset', // jQuery and Bootstrap
+        'app\assets\AppAsset',
     ];
 }

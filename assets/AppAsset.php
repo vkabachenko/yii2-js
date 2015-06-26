@@ -24,7 +24,7 @@ class AppAsset extends AssetBundle
         'js/h1color.js'
     ];
     public $depends = [
-        'yii\web\YiiAsset',
-        'yii\bootstrap\BootstrapAsset', // includes jQuery
+        'yii\web\YiiAsset', // depends JqueryAsset
+        'yii\bootstrap\BootstrapAsset',
     ];
 }

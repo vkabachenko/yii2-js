@@ -1,6 +1,6 @@
 ## CRUD grid with all actions by ajax
 
-This example is based on CRUD grid implemented by standard `gii` generator.
+This example is based on CRUD grid implemented by `gii` generator.
 
 * wrap the grid in the `index.php` view file by `pjax` widget. This will provide sorting, searching and pagination actions by ajax.
 

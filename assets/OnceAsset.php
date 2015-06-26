@@ -13,6 +13,6 @@ class OnceAsset extends AssetBundle
         'js/outer.js'
     ];
     public $depends = [
-        'yii\web\JqueryAsset',
+        'app\assets\AppAsset', // after layout scripts
     ];
 }

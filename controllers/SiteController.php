@@ -17,6 +17,7 @@ class SiteController extends Controller
         ];
     }
 
+    // layout js demo
     public function actionIndex()
     {
         return $this->render('index');

@@ -47,6 +47,7 @@ if ($model) :
         <?php endif; ?>
     </p>
 
+<!-- Show flash message -->
 <div>
     <?= kartik\alert\AlertBlock::widget(); ?>
 </div>

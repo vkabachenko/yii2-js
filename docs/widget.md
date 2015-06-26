@@ -1,4 +1,4 @@
-## Add third party js widget in view
+## Simple js widget in view
 
 We assume that js widget is based on jQuery and has bower package.
 

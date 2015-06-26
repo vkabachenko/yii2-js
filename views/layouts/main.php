@@ -6,7 +6,7 @@ use app\assets\AppAsset;
 
 /* @var $this \yii\web\View */
 /* @var $content string */
-$this->title = 'Yii2 & JavaScript';
+$this->title = 'JS in Yii2';
 
 AppAsset::register($this);
 ?>
@@ -36,10 +36,10 @@ AppAsset::register($this);
                 'options' => ['class' => 'navbar-nav navbar-right'],
                 'items' => [
                     ['label' => 'Home', 'url' => ['site/index']],
-                    ['label' => 'Pure JS', 'items' => [
+                    ['label' => 'Simple JS', 'items' => [
                         ['label' => 'Outer script file in view', 'url' =>  ['site/outer'],],
                         ['label' => 'Inner script in view', 'url' =>  ['site/inner'],],
-                        ['label' => 'Third party widget', 'url' =>  ['site/widget'],],
+                        ['label' => 'Simple js widget in view', 'url' =>  ['site/widget'],],
                     ],
                   ],
                     ['label' => 'Ajax', 'items' => [
@@ -55,7 +55,7 @@ AppAsset::register($this);
         ?>
 
         <div class="container">
-            <h1>JavaScript in Yii2 examples</h1>
+            <h1>JavaScript in Yii2</h1>
             <?= $content ?>
         </div>
 </div>

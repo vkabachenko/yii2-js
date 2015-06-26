@@ -13,6 +13,6 @@ class GridAsset extends AssetBundle
         'js/grid.js'
     ];
     public $depends = [
-        'yii\web\JqueryAsset',
+        'app\assets\AppAsset',
     ];
 }

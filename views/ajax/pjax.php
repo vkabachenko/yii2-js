@@ -5,7 +5,7 @@ use app\models\Countries;
 use yii\widgets\Pjax;
 
 /* @var $id_country integer */
-/* @var $state string */
+/* @var $state app\models\States */
 /* @var $this \yii\web\View */
 
 $countries = Countries::getList();

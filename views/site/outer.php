@@ -7,7 +7,7 @@ use yii\helpers\Html;
 
 OnceAsset::register($this);
 
-echo Html::button('Click to show/hide instructions',[
+echo Html::button('Click to show/hide article',[
     'id' => 'button',
     'class' => 'btn btn-primary btn-lg',
     'style' => 'margin-bottom:20px;',

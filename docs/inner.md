@@ -6,5 +6,5 @@ To run inner js script in selected view:
 
 * register this script as follows: `registerJS($script)`. By default it will also register jQuery and launch this script after DOM is ready.
 
-* you can also add simple js script as an action attribute (e.g. `onClick`) of a DOM element.
+* you can also add simple js script as an action attribute (e.g. `onclick`) of a DOM element.
 

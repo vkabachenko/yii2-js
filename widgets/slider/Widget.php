@@ -8,21 +8,21 @@ use yii\helpers\Json;
 
 class Widget extends \yii\base\Widget
 {
-    /* @var $items Array */
+    /* @var $items array */
     /* List of items in carousel. Each item wraps with div.
     * The set of items wraps with div too*/
     public $items = [];
 
-    /* @var $options Array */
+    /* @var $options array */
     /* the HTML attributes for the widget container div. */
     public $options = [];
 
-    /* @var $clientOptions Array */
+    /* @var $clientOptions array */
     /* array the options for the underlying widget. */
     /* @see http://kenwheeler.github.io/slick/ */
     public $clientOptions = [];
 
-    /* @var $clientEvents Array */
+    /* @var $clientEvents array */
     /* array the event handlers for the underlying widget. */
     /* @see http://kenwheeler.github.io/slick/ */
     public $clientEvents = [];

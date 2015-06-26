@@ -13,6 +13,6 @@ class LoadAsset extends AssetBundle
         'js/load.js'
     ];
     public $depends = [
-        'yii\web\JqueryAsset',
+        'app\assets\AppAsset',
     ];
 }

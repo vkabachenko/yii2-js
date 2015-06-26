@@ -8,7 +8,7 @@ Pjax is a widget that makes automatic ajax request for link clicks and form subm
 
 * add `data-pjax = ''` attribute to the form(s) inside the pjax widget.
 
-* use `renderAjax` method in form or link actions that make ajax response.
+* use `renderAjax` method in controller's actions that make ajax response.
 
 * don't use `data-method` or `data-confirm` attributes in the links inside pjax widget. Those attributes destroy ajax call.
 

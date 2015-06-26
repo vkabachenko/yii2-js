@@ -46,6 +46,7 @@ class CountriesSearch extends Countries
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
         ]);
+        $dataProvider->setSort(['defaultOrder' =>['name'=>SORT_ASC]]);
 
         $this->load($params);
 

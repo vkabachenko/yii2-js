@@ -27,7 +27,7 @@ function clickHandlers() {
     });
 
     $('.actionDelete').click(function(){
-        return ajaxModal(this,'Delete country');
+        return ajaxModal(this,'Remove country');
     });
 }
 

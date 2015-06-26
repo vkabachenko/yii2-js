@@ -10,7 +10,7 @@ Contents
 
 [Inner script in view](docs/inner.md)
 
-[Third party js widget in view](docs/widget.md)
+[Simple js widget in view](docs/widget.md)
 
 [Simple loading html content using ajax](docs/load.md)
 
