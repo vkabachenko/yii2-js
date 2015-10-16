@@ -23,6 +23,8 @@ class m150608_051243_db_init extends Migration
             'name' => 'string',
         ]);
 
+	$this->createIndex('countryName','countries','name',true); // unique name of country	
+
         $this->createIndex('idCountry','states','id_country');
 
         $this->execute("ALTER TABLE states ADD FOREIGN KEY ( id_country )

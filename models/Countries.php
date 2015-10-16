@@ -33,7 +33,8 @@ class Countries extends \yii\db\ActiveRecord
     {
         return [
             [['area', 'population'], 'integer'],
-            [['name', 'capital'], 'string', 'max' => 255]
+            [['name', 'capital'], 'string', 'max' => 255],
+            ['name', 'unique'],
         ];
     }
 

@@ -35,14 +35,25 @@ use yii\widgets\ActiveForm;
 $script =
     <<<JS
 
-$('#updateForm').on('beforeSubmit',function(){ // runs after validation
+$('#updateForm').on('beforeSubmit',function(){ // runs after client validation
 
     $.post( // method - post
         $(this).attr('action'), // url in form's action
         $(this).serialize(),    // all form's data - to query string
+
         function(data) {            // update action returns success
+                 $('#modalWindow .modal-body').html(data); 
+
+                 // check if there were ajax valoidation errors                                                      
+                 var scriptPos = data.indexOf('\$script'); // found the beginning position of js script in returning html code 
+                 var htmlCode = data.substring(0, scriptPos); // html code without script text
+
+                 if (htmlCode.indexOf('has-error') != -1) { // if ajax validation errors exists would be has-error class
+
+                        return false; // return without closing modal window
+                  }
+
                     var interval = data ? 1000 : 0; //timeout interval for creation - 1 sec
-                    $('#modalWindow .modal-body').html(data); // alert message if needed
                     // show alert message and hide
                     setTimeout(function(){
                         $('#modalWindow').modal('hide'); // hide modal window
